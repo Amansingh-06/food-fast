@@ -1,12 +1,61 @@
-# React + Vite
+# 🍽️ Food Delivery Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple and clean **Food Delivery Web Application** where users can **login using Mobile OTP authentication** and view a list of available restaurants fetched from **Supabase** backend.
 
-Currently, two official plugins are available:
+---
+**Jam Link** - https://jam.dev/c/94a823b4-7439-4ca4-aa27-99648a8e9f91
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📱 **Mobile Number OTP Login** (Supabase Authentication)
+- 🍔 **Restaurant List Display** (Fetched from Supabase Database)
+- ⚡ **React.js Frontend** with **Tailwind CSS** styling
+- 🔒 **Session Management** using `sessionStorage`
+- 🛠️ **Supabase** used for both Authentication and Database
+- 🌐 Responsive Design for all devices
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📚 Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS
+- **Backend-as-a-Service:** Supabase (Auth + Database)
+- **Authentication:** Mobile OTP
+- **State Management:** React Hooks (`useState`, `useEffect`)
+
+---
+
+## 🛠️ Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/Amansingh-06/food-fast.git
+   cd food-delevery
+
+   npm install
+   
+🔑 Authentication Flow
+User enters mobile number → receives OTP.
+
+User submits OTP → Supabase verifies OTP.
+
+On successful login → sessionStorage.setItem('isLoggedIn', 'true').
+
+Navbar dynamically shows Login/Logout based on login status.
+
+📦 Supabase Database Structure
+Table: Restaurant
+
+Fields Example:
+
+id (Primary Key)
+
+name (Text)
+
+location (Text)
+
+rating (Decimal)
+
+imageUrl (Text URL)
+description(Text)
+
+
